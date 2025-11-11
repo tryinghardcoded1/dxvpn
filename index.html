@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="DX VPN Admin Panel"
+    />
+    <title>DX VPN Admin Panel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'dx-dark': '#0a092d',
+              'dx-dark-2': '#14143a',
+              'dx-dark-3': '#21214d',
+              'dx-accent': '#00f6ff',
+              'dx-accent-2': '#7d2aff',
+              'dx-text': '#d0d2d6',
+            },
+            boxShadow: {
+              'glow-accent': '0 0 15px rgba(0, 246, 255, 0.5), 0 0 5px rgba(0, 246, 255, 0.6)',
+              'glow-accent-2': '0 0 15px rgba(125, 42, 255, 0.5), 0 0 5px rgba(125, 42, 255, 0.6)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-dx-dark">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
